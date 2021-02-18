@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Purchased Price Prediction by Deepanshu Jayswal</title>
 </head>
 
 <body>
 
     <div style="color:blue">
         <form action="{{ url_for('predict')}}" method="post">
-            <h2>Predictive analysis</h2>
-            <h3>Year</h3>
+            <h2>Predictive Analysis For Used Car</h2>
+            <br>
+            <h3>Enter Year</h3>
             <input id="first" name="Year" type="number ">
             <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
             <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
@@ -30,7 +31,7 @@
                 <option value="Mannual">Manual Car</option>
                 <option value="Automatic">Automatic Car</option>
             </select>
-            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+            <br><br><button id="sub" type="submit ">Calculate</button>
             <br>
 
 
@@ -40,7 +41,7 @@
 
 
 
-        <br><br><h3>{{ prediction_text }}<h3>
+        <br><br><h3>{{ prediction_text }}<h3> <br>
     </div>
 
 
@@ -48,7 +49,7 @@
 
     <style>
         body {
-            background-color: lightslategray;
+            background-color: white;
             text-align: center;
             padding: 0px;
         }
